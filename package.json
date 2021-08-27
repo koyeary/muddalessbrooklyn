@@ -1,0 +1,28 @@
+{
+  "name": "muddalessbrooklyn",
+  "version": "1.0.0",
+  "description": "boilerplate portfolio site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyeary/muddalessbrooklyn.git"
+  },
+  "author": "Kat Yeary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koyeary/muddalessbrooklyn/issues"
+  },
+  "homepage": "https://github.com/koyeary/muddalessbrooklyn#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "handlebars": "^4.7.7",
+    "material-components-web": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
