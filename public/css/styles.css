@@ -1,6 +1,6 @@
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
@@ -9,17 +9,14 @@ h1 {
   }
 }
 
-.carousel,
-.carousel .carousel-inner,
-.carousel .carousel-inner .active,
-.carousel .carousel-inner .carousel-item,
 .view,
 body,
 html {
   height: 100%;
 }
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  position: fixed;
 }
 .page-footer,
 .top-nav-collapse {
@@ -30,3 +27,20 @@ html {
     background-color: #1c2331;
   }
 }
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.footer {
+    width: 100vw;
+    position: fixed;
+}
+
+.delay-visibility {
+    transition-duration: 2s;
+    transition-delay: 1s;
+  }
+  
