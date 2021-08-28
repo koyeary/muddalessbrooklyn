@@ -1,5 +1,5 @@
 const express = require('express');
-const handlebars = require('express-handlebars');
+const exphbs = require('express-handlebars');
 
 
 const app = express();
@@ -7,7 +7,7 @@ const PORT = 3000;
 
 
 app.set('view engine', 'handlebars');
-app.engine('handlebars', handlebars({
+app.engine('handlebars', exphbs({
 layoutsDir: __dirname + '/views/layouts',
 }));
 
