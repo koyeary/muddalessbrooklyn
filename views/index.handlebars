@@ -1,5 +1,22 @@
- <body>
- {{> navbar }}
-  {{> carousel }}
-  {{> footer }}
-</body>  
+<body>
+
+    {{> header }}
+    <section>
+        {{> carousel }}
+    </section>
+    <section>
+        <container class="m-5 pt-3">
+            {{> links }}
+        </container>
+    </section>
+
+
+    <main>
+        <div class="container">
+            {{> about }}
+        </div>
+        <div class="container-fluid my-5 contact">
+            {{> contact}}
+        </div>
+    </main>
+</body>
