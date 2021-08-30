@@ -1,5 +1,5 @@
 exports.mail = (req,res) => {
-    res.render('mail/mail', {
+    res.render('mail', {
       layout: 'main-registration'
     });
   };

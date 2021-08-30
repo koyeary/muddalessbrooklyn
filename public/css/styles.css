@@ -1,13 +1,16 @@
-h1 {
-    /* font-family: 'Abril Fatface', cursive; */
-    font-family: 'Gowun Dodum', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252626;
 }
 
-/* @media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #1c2331 !important;
-  }
-} */
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #758691;
+}
 
 .view,
 body,
@@ -17,32 +20,26 @@ html {
 .navbar {
   background-color: transparent;
 }
-/* .page-footer,
-.top-nav-collapse {
-  background-color: #1c2331;
-}
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #1c2331;
-  }
+
+img .portrait {
+  border: 10px;
+  padding: 2px;
 }
 
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+.main-nav {
+  border: none;
+  background-color: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #334252;
 }
 
-.footer {
-    width: 100vw;
-    position: fixed;
-} */
+.main-nav:hover {
+  background-color: #334252;
+  color: white;
+}
 
-.delay-visibility {
-    transition-duration: 2s;
-    transition-delay: 1s;
-  }
-  
 .contact {
-    background-color: #758691;
+  background-color: #758691;
 }

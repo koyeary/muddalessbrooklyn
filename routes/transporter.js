@@ -1,15 +1,16 @@
 const router         = require('express').Router();
 const nodemailer     = require('nodemailer');
+const config         = require('config');
 const mailController = require('../controllers/mailController');
 
-router.get('/', mailController.mail);
+//router.get('/', mailController.mail);
 
-const user = process.env.MAIL_USER;
-const pass = process.env.MAIL_PASS;
+const user = config.MAIL_USER;
+const pass = config.MAIL_PASS;
 
 // POST route from contact form
 router.post('/', (req, res, next) => {
-  console.log(req.body);
+  //console.log(req.body);
 
    let transporter = nodemailer.createTransport({
     service: 'yahoo',
@@ -33,8 +34,8 @@ router.post('/', (req, res, next) => {
    const mailOpts = {
     from: user, // This is ignored by Gmail
     to: 'katyeary@gmail.com',
-    subject: `Message from ${req.body.name} through your portfolio`,
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    subject: `${req.body.subject}`,
+    text: `${req.body.name} (${req.body.email}) says: ${req.body.message} call ${req.body.phone}`
   }; 
 
 
