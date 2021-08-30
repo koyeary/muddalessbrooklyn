@@ -17,6 +17,13 @@ body,
 html {
   height: 100%;
 }
+
+.carousel-item img {
+  width: auto !important;
+  height: 75vh;
+  max-height: 75vh;
+}
+
 .navbar {
   background-color: transparent;
 }
