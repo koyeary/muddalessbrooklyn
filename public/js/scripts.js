@@ -26,3 +26,14 @@ $('#mail').on('click', (e) => {
   postReq(name, email, phone, subject, message);
   alert(`Message sent`);
 });
+ 
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
