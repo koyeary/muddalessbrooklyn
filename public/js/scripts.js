@@ -14,7 +14,7 @@ const postReq = (name, email, phone, subject, message) => {
 };
 
 // Send the POST request.
-$('#mail').on('click', (e) => {
+$('#mail').on('click', async (e) => {
   e.preventDefault();
 
   const name = $('#name-input').val().trim();
@@ -23,8 +23,9 @@ $('#mail').on('click', (e) => {
   const subject = $('#subject-input').val().trim();
   const message = $('#message-input').val().trim();
 
-  postReq(name, email, phone, subject, message);
-  alert(`Message sent`);
+  await postReq(name, email, phone, subject, message);
+
+  $('#contactAlert').modal(console.log('modal click'));
 });
  
 // init Masonry
