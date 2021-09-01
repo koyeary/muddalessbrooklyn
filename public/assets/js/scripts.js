@@ -32,26 +32,10 @@ $('#mail').on('click', async (e) => {
   }
 });
 
-/*// compile the template
-var template = Handlebars.compile('Handlebars <b>{{doesWhat}}</b>');
-// execute the compiled template and print the output to the console
-console.log(template({ doesWhat: 'rocks!' }));
+//Load image gallery
 
-const images = [
-  { path: './img/gallery/3374Troy/21-726578_5_2.jpeg' },
-  { path: './img/gallery/3374Troy/21-726578_10_2.jpeg' },
-  { path: './img/gallery/3374Troy/21-726578_6_2.jpeg' },
-  { path: './img/gallery/3374Troy/21-726578_16_2.jpeg' },
-  { path: './img/gallery/3374Troy/21-726578_29_2.jpeg' },
-  { path: './img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg' },
-  { path: './img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg' },
-  { path: './img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg' },
-  { path: './img/gallery/2291Chelan/genMid.19-485988_5_0.jpg' },
-  { path: './img/gallery/2291Chelan/genMid.19-485988_8_0.jpg' },
-  { path: './img/gallery/1870Veteran/20-546016_2_0.jpeg' }
-];
 
- Handlebars.registerHelper('image-list', () => {
+/*  Handlebars.registerHelper('image-list', () => {
   return this.path;
 }); */
 /* $('img').on('click', (e) => {

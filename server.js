@@ -1,10 +1,21 @@
 const express   = require('express');
+const connectDB = require('./config/db');
 const path      = require('path');
 const logger    = require('morgan');
 const exphbs    = require('express-handlebars');
+const routes    = require('./routes');
 
 const app       = express();
-const PORT = process.env.PORT || 3000;
+
+// Connect Database
+connectDB();
+
+// Middleware
+app.use(logger('dev'));
+app.use(express.json());
+
+// API and View routes
+app.use(routes);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -15,16 +26,12 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false, limit: '20mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
 
-require('./routes')(app);
+const PORT = process.env.PORT || 3000;
 
-// catch 404 and forward to error handler
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+  // catch 404 and forward to error handler
 /* app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
@@ -40,5 +47,3 @@ require('./routes')(app);
       error: (app.get('env') === 'development') ? err : {}
     })
   }); */
-
-  app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
