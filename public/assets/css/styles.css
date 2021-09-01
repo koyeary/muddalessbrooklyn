@@ -60,19 +60,12 @@ h1 {
 .about h2, h4 {
   font-family: 'Fira Sans', sans-serif;
 }
-/* 
-.portrait {
-  min-width: 50%;
-}
- */
 
 /* Contact */
 
 .contact {
   background-color: #758691;
 }
-
-
 
 /* Gallery */
 
@@ -117,7 +110,6 @@ h1 {
   box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
-
 .tz-gallery .lightbox img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
@@ -140,4 +132,11 @@ h1 {
   .container.gallery-container {
       border-radius: 0;
   }
+}
+
+/* Footer */
+
+.footer {
+  background-color: darkslategray;
+  font-size: x-small;
 }
