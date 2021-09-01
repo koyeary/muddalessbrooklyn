@@ -1,15 +1,15 @@
 <body>
 
-    <div class="my-3">
-    {{> header }}
+    <div class="my-3 mx-auto">
+        {{> header }}
     </div>
     <section>
         {{> carousel }}
     </section>
     <section>
-        <container class="m-4 pt-3">
+     <container class="m-4 pt-3 d-none d-md-block">
             {{> links }}
-        </container>
+     </container>
     </section>
 
     <main>
@@ -17,7 +17,14 @@
             {{> about }}
         </div>
         <div class="container-fluid contact" id="contact">
-            {{> contact}}
+            <div class="row mx-auto py-5"></div>
+            <div class="row mx-auto py-5">
+                <div class="col-xs-2 col-md-2"></div>
+                <div class="col-xs-8 col-md-4">
+                    {{> contact}}
+                </div>
+                <div class="col-xs-2 col-md-6"></div>
+            </div>
         </div>
     </main>
 

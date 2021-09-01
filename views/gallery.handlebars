@@ -1,49 +1,162 @@
-<body>
-    {{!-- When you click on an image it opens a modal that enlarges the image
-    To load images, --}}
-    <div class="container-fluid">
+<body class="gallery-body">
 
-        <h1 class="my-4 font-weight-bold">Masonry - images option</h1>
+    <div class="container gallery-container pt-4">
 
-        <div class="grid">
-            <div class="grid-sizer"></div>
-            <div class="grid-item">
-                <img src="./img/gallery/1870Veteran/20-546016_0.jpeg" />
+        <div class="tz-gallery">
+
+            <div class="row image_list">
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/3374Troy/21-726578_5_2.jpeg" alt="Rails"
+                            data-whatever="./img/gallery/3374Troy/21-726578_5_2.jpeg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/3374Troy/21-726578_10_2.jpeg" alt="Rails"
+                            data-whatever="./img/gallery/3374Troy/21-726578_10_2.jpeg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/3374Troy/21-726578_6_2.jpeg" alt="Rails"
+                            data-whatever="./img/gallery/3374Troy/21-726578_6_2.jpeg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/3374Troy/21-726578_16_2.jpeg" alt="Rails"
+                            data-whatever="./img/gallery/3374Troy/21-726578_16_2.jpeg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/3374Troy/21-726578_29_2.jpeg" alt="Rails"
+                            data-whatever="./img/gallery/3374Troy/21-726578_29_2.jpeg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg" alt="Park"
+                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg" alt="Tunnel"
+                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg" alt="Traffic"
+                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg" alt="Coast"
+                            data-whatever="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg" alt="Rails"
+                            data-whatever="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                        <img src="./img/gallery/1870Veteran/20-546016_2_0.jpeg" alt="Bridge"
+                            data-whatever="./img/gallery/1870Veteran/20-546016_2_0.jpeg">
+                    </div>
+                </div> 
+
             </div>
-            <div class="grid-item">
-                <img src="./img/gallery/1870Veteran/20-546016_2_0.jpeg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/3374Troy/21-726578_5_2.jpeg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/3374Troy/21-726578_6_2.jpeg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/3374Troy/21-726578_10_2.jpeg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/3374Troy/21-726578_16_2.jpeg" />
-            </div>
-            <div class="grid-item">
-                <img src="./img/gallery/3374Troy/21-726578_29_2.jpeg" />
-            </div>
+
         </div>
 
     </div>
+
+    <!-- Modal -->
+
+     <!--  <div class="modal fade bd-example-modal-lg" id="imageZoom" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                {{ image }}
+            </div>
+        </div>
+    </div> -->
+
 </body>
+
+<body class="gallery-body">
+
+    <div class="container gallery-container pt-4">
+
+        <div class="tz-gallery">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/3374Troy/21-726578_5_2.jpeg">
+                        <img src="./img/gallery/3374Troy/21-726578_5_2.jpeg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/3374Troy/21-726578_10_2.jpeg">
+                        <img src="./img/gallery/3374Troy/21-726578_10_2.jpeg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/3374Troy/21-726578_6_2.jpeg">
+                        <img src="./img/gallery/3374Troy/21-726578_6_2.jpeg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/3374Troy/21-726578_16_2.jpeg">
+                        <img src="./img/gallery/3374Troy/21-726578_16_2.jpeg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/3374Troy/21-726578_29_2.jpeg">
+                        <img src="./img/gallery/3374Troy/21-726578_29_2.jpeg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg" alt="Park">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg" alt="Tunnel">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg">
+                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg" alt="Traffic">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg">
+                        <img src="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg" alt="Coast">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg">
+                        <img src="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/gallery/1870Veteran/20-546016_0.jpeg">
+                        <img src="./img/gallery/1870Veteran/20-546016_2_0.jpeg" alt="Bridge">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> --}}

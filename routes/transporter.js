@@ -41,16 +41,10 @@ router.post('/', (req, res, next) => {
 
   // Attempt to send the email
    transporter.sendMail(mailOpts, (error, res) => {
-    if (error) {
-      console.log(error);
-      console.log(`Failed contact form attempt: ${mailOpts}`);
-      //router.get('/failure'); 
-    }
-    else {
       //res.render('contact-success') 
       console.log('Contact-form attempt successful');
       console.log(res.response);
-    }
+      //$('#contactAlert').modal(console.log(res));
   });
 });
 
