@@ -1,9 +1,7 @@
 const router         = require('express').Router();
 const nodemailer     = require('nodemailer');
 const config         = require('config');
-const mailController = require('../controllers/mailController');
 
-//router.get('/', mailController.mail);
 
 const user = config.MAIL_USER;
 const pass = config.MAIL_PASS;

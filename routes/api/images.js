@@ -1,30 +1,30 @@
-const { Image } = require('../../models');
-var db = require('../../models');
+const Image = require('../../models/Image');
 
-module.exports = async (app) => {
-  app.get('/api/images', (req, res) => {
-    try {
-      const images = await db.Image.find({});
+/* router.get('/', async (req, res) => {
+  try {
+    const images = await Image.find({});
 
-      return res.json(images);
-    } catch (err) {
-      return console.error(err);
+    return res.json(images);
+  } catch (err) {
+    return console.error(err);
+  }
+}); */
+
+router.put('/:id', async (req, res) => {
+  const { id, rating } = req.body;
+
+  try {
+    const image = await Image.updateOne({ id, rating });
+
+    if (!image) {
+      return res.status(400).json({ msg: 'Image not found' });
     }
-  }),
-    app.put('/api/images/:id', async (req, res) => {
-      const { id, rating } = req.body;
 
-      try {
-        const image = await Image.updateOne({ id, rating });
+    await image.save();
+    res.status(200).json({ msg: 'Image updated' });
+  } catch (err) {
+    return console.error(err);
+  }
+});
 
-        if (!image) {
-          return res.status(400).json({ msg: 'Image not found' });
-        }
-
-        await image.save();
-        res.status(200).json({ msg: 'Image updated' });
-      } catch (err) {
-        return console.error(err);
-      }
-    });
-};
+module.exports = router;

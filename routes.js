@@ -2,7 +2,7 @@ module.exports = app => {
 
     const application = require('./routes/application');
     const failure = require('./routes/failure');
-    const mail = require('./routes/transporter');
+    const mail = require('./routes/api/transporter');
     const gallery = require('./routes/gallery');
 
     app.use('/', application);
