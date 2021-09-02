@@ -1,4 +1,4 @@
-const router = require('router');
+const router    = require('express').Router();
 const galleryRoutes = require('./gallery');
 const applicationRoute = require('./application');
 

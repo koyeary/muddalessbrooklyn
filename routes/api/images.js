@@ -1,6 +1,7 @@
+const router    = require('express').Router();
 const Image = require('../../models/Image');
 
-/* router.get('/', async (req, res) => {
+ router.get('/', async (req, res) => {
   try {
     const images = await Image.find({});
 
@@ -8,7 +9,7 @@ const Image = require('../../models/Image');
   } catch (err) {
     return console.error(err);
   }
-}); */
+});
 
 router.put('/:id', async (req, res) => {
   const { id, rating } = req.body;

@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
           images: images
       };
 
-      return res.render('gallery/gallery', hbsObject);
+      return res.render('gallery', hbsObject);
     } catch (err) {
       return console.error(err);
     }

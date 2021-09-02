@@ -1,5 +1,5 @@
 const path =    require('path');
-const router = require('router');
+const router    = require('express').Router();
 const imageRoutes = require('./images');
 const transporterRoutes = require('./transporter');
 
