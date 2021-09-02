@@ -13,6 +13,7 @@ connectDB();
 // Middleware
 app.use(logger('dev'));
 app.use(express.json());
+app.use(express.static(__dirname + '/public'));
 
 // API and View routes
 app.use(routes);

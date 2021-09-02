@@ -5,7 +5,16 @@
         <div class="tz-gallery">
 
             <div class="row image_list">
-                <div class="col-sm-12 col-md-4">
+                {{#each imageDocuments}}
+                 <div class="col-sm-12 col-md-4">
+                    <div class="lightbox">
+                         <img src={{image}} alt={{description}}
+                            data-whatever={{image}}>
+
+                    </div>
+                </div>
+                {{/each}}
+{{!--                 <div class="col-sm-12 col-md-4">
                     <div class="lightbox">
                         <img src="./img/gallery/3374Troy/21-726578_5_2.jpeg" alt="Rails"
                             data-whatever="./img/gallery/3374Troy/21-726578_5_2.jpeg">
@@ -70,7 +79,7 @@
                         <img src="./img/gallery/1870Veteran/20-546016_2_0.jpeg" alt="Bridge"
                             data-whatever="./img/gallery/1870Veteran/20-546016_2_0.jpeg">
                     </div>
-                </div> 
+                </div>  --}}
 
             </div>
 

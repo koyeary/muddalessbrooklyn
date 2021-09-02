@@ -28,4 +28,21 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+router.post('/', async (req, res) => {
+    const { image, description, rating } = req.body;
+    try {
+        const img = new Image({
+            image,
+            description,
+            rating
+        });
+
+        await img.save();
+        return res.status(200).json({ msg: 'image successfully created'});
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
+    }
+})
+
 module.exports = router;

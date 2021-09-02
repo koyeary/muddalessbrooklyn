@@ -34,25 +34,6 @@ $('#mail').on('click', async (e) => {
 
 //Load image gallery
 
-
-/*  Handlebars.registerHelper('image-list', () => {
-  return this.path;
-}); */
-/* $('img').on('click', (e) => {
-  e.preventDefault();
-  const zoom = $('#imageZoom').modal(console.log('zoom'));
-
-
-}) */
-
-/*    $('#imageZoom').on('show.bs.modal', (e) => {
-    const button = $(e.relatedTarget);
-    const image = button.data('whatever');
-  
-    const zoom = $('#imageZoom').modal(console.log('zoom'));
-    zoom.find('#image').prop('src', image);
-  });  */
-
 //$('.lightbox').modal(console.log('zoom'));
 /* $('.lightbox').on('show.bs.modal', (e) => {
   const button = $(e.relatedTarget);

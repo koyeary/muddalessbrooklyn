@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://new-user_84:4GShLZMaf2NdJFT@cluster0.6foyl.mongodb.net/itsanimatedtext?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://new-user_84:4GShLZMaf2NdJFT@cluster0.6foyl.mongodb.net/ksrdesign?retryWrites=true&w=majority",
     "MAIL_USER": "kat.yeary@yahoo.com",
     "MAIL_PASS": "mzmzpdixhrkgzgtw"
 }

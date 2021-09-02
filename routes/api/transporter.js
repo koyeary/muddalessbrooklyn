@@ -41,7 +41,7 @@ router.post('/', (req, res, next) => {
    transporter.sendMail(mailOpts, (error, res) => {
       //res.render('contact-success') 
       console.log('Contact-form attempt successful');
-      console.log(res.response);
+     return  res.status(250).send('Contact successful')
       //$('#contactAlert').modal(console.log(res));
   });
 });
