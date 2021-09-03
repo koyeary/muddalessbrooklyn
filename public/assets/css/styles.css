@@ -167,10 +167,6 @@ h4 {
   border-radius: 4px;
 }
 
-.baguetteBox-button {
-  background-color: transparent !important;
-}
-
 
 @media(max-width: 768px) {
   body {
@@ -181,6 +177,9 @@ h4 {
       border-radius: 0;
   }
 } 
+
+/* Gallery Modal */
+
 
 /* Footer */
 

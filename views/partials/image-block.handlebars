@@ -1,8 +1,10 @@
-                {{#each images }}
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src={{image}} alt={{description}}
-                            data-whatever={{image}}>
-                    </div>
-                </div>
-                {{/each}}
+<div class="row image_list">
+    {{#each imageDocuments}}
+    <div class="col-sm-12 col-md-4">
+        <div class="lightbox" id={{_id}}>
+            <img src={{image}} alt={{description}}>
+        </div>
+    </div>
+    {{/each}}
+    {{> gallery-modal}}
+</div>

@@ -11,7 +11,8 @@ router.get('/', async (req, res) => {
       imageDocuments: images.map((doc) => {
         return {
           image: doc.image,
-          description: doc.description
+          description: doc.description,
+          _id: doc._id
         };
       })
     };
