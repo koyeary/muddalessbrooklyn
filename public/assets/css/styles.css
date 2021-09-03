@@ -15,24 +15,40 @@ html {
   height: 100%;
 }
 
+
+
 h1 {
-  font-family: 'Spartan', sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.75rem, 4rem);
+}
+
+h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size : clamp(2rem, 3rem, 3.3vw);
+}
+
+h4 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size : clamp(1.25rem, 2rem, 2.2vw);
+}
+
+.header {
+  font-family: 'Spartan', sans-serif;
   color: #758691;
 }
 
+
 /* Hero / Img Carousel */
 .carousel-item img {
-  width: auto !important;
-  height: 75vh;
-  max-height: 75vh;
+  max-width: auto !important;
+  height: 60vh;
+  max-height: 60vh;
 }
 
 /* Navbar */
 
 .navbar {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .main-nav {
@@ -48,23 +64,55 @@ h1 {
   color: white;
 }
 
+.navbar-brand {
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 600;
+  font-size: 1.25rem
+}
+
+.secondary-nav {
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.secondary-nav a {
+  color: #334252;
+}
 
 /* About */ 
 
 .about {
   background-color: #ede9e6;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.15rem;
+  font-size: clamp(.75rem, 1.15rem, 1.15rem);
 }
 
-.about h2, h4 {
-  font-family: 'Fira Sans', sans-serif;
+.portrait {
+   width: clamp(425px, 530px, 40vw);  
 }
 
 /* Contact */
 
 .contact {
-  background-color: #758691;
+  background-color: #E5E7E9;
+}
+
+.contact-dialog {
+  background-color: #ffff;
+  width: clamp(400px, 40vw, 40vw);
+}
+
+.send {
+  background-color: #334252;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.15rem;
+  color: #ffff;
+}
+
+.send:hover {
+  background-color: #ffff;
+  color: #334252;
 }
 
 /* Gallery */
@@ -132,11 +180,16 @@ h1 {
   .container.gallery-container {
       border-radius: 0;
   }
-}
+} 
 
 /* Footer */
 
 .footer {
-  background-color: darkslategray;
-  font-size: x-small;
+  background-color: #2D3048;
+  font-size: small;
+  color: #ffff;
+}
+
+.footer a {
+  color: #ffff
 }

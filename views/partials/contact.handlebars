@@ -1,23 +1,23 @@
 <!-- Contact Form -->
-
-<div class="contact">
-  <div class="form-group">
-    <input class="form-control" id="name-input" placeholder="name">
+  <div class="contact-dialog shadow p-5">
+    <h2 class="text-center">Contact us.</h2>
+    <div class="form-group">
+      <input class="form-control" id="name-input" placeholder="name">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email-input" placeholder="email">
+    </div>
+    <div class="form-group">
+      <input type="phone" class="form-control" id="phone-input" placeholder="phone number">
+    </div>
+    <div class="form-group">
+      <input class="form-control" id="subject-input" placeholder="subject">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="message-input" placeholder="message" rows="7"></textarea>
+    </div>
+    <div class="row mx-auto"><button class="btn btn-block send" id="mail" type="submit">send</button></div>
   </div>
-  <div class="form-group">
-    <input type="email" class="form-control" id="email-input" placeholder="email">
-  </div>
-  <div class="form-group">
-    <input type="phone" class="form-control" id="phone-input" placeholder="phone number">
-  </div>
-  <div class="form-group">
-    <input class="form-control" id="subject-input" placeholder="subject">
-  </div>
-  <div class="form-group">
-    <textarea class="form-control" id="message-input" placeholder="message" rows="7"></textarea>
-  </div>
-  <div class="row mx-auto"><button class="btn" id="mail" type="submit">send</button></div>
-</div>
 
 
 <!-- Success Modal -->
@@ -34,7 +34,7 @@
         Your message has been sent. Please allow us 48 hours to respond.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="messageSent">Ok.</button>
+        <button type="button" class="btn" data-dismiss="modal" id="messageSent">Ok.</button>
       </div>
     </div>
   </div>

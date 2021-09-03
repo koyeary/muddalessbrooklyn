@@ -1,102 +1,39 @@
 <body class="gallery-body">
-
-    <div class="container gallery-container pt-4">
-
+    <div class="container gallery-container my-4">
         <div class="tz-gallery">
-
             <div class="row image_list">
                 {{#each imageDocuments}}
-                 <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="lightbox">
-                         <img src={{image}} alt={{description}}
-                            data-whatever={{image}}>
-
+                        <img src={{image}} id="myImg" alt={{description}} data-whatever={{image}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                     </div>
                 </div>
                 {{/each}}
-{{!--                 <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/3374Troy/21-726578_5_2.jpeg" alt="Rails"
-                            data-whatever="./img/gallery/3374Troy/21-726578_5_2.jpeg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/3374Troy/21-726578_10_2.jpeg" alt="Rails"
-                            data-whatever="./img/gallery/3374Troy/21-726578_10_2.jpeg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/3374Troy/21-726578_6_2.jpeg" alt="Rails"
-                            data-whatever="./img/gallery/3374Troy/21-726578_6_2.jpeg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/3374Troy/21-726578_16_2.jpeg" alt="Rails"
-                            data-whatever="./img/gallery/3374Troy/21-726578_16_2.jpeg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/3374Troy/21-726578_29_2.jpeg" alt="Rails"
-                            data-whatever="./img/gallery/3374Troy/21-726578_29_2.jpeg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg" alt="Park"
-                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg" alt="Tunnel"
-                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg" alt="Traffic"
-                            data-whatever="./img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg" alt="Coast"
-                            data-whatever="./img/gallery/2291Chelan/genMid.19-485988_5_0.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg" alt="Rails"
-                            data-whatever="./img/gallery/2291Chelan/genMid.19-485988_8_0.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="lightbox">
-                        <img src="./img/gallery/1870Veteran/20-546016_2_0.jpeg" alt="Bridge"
-                            data-whatever="./img/gallery/1870Veteran/20-546016_2_0.jpeg">
-                    </div>
-                </div>  --}}
 
             </div>
-
         </div>
-
+    </div>
+    <div class="mt-5">
+        {{> footer }}
     </div>
 
-    <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-     <!--  <div class="modal fade bd-example-modal-lg" id="imageZoom" tabindex="-1" role="dialog"
-        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                {{ image }}
-            </div>
-        </div>
-    </div> -->
-
-    {{> footer }}
 </body>
