@@ -13,7 +13,8 @@ connectDB();
 // Middleware
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
+//app.use(favicon(__dirname + '/public/favicon_io/favicon.ico'));
 
 // API and View routes
 app.use(routes);
