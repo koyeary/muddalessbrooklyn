@@ -25,10 +25,10 @@
     "express-handlebars": "^5.3.3",
     "mongoose": "^6.0.4",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.6.3"
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {
-    "handlebars": "^4.7.7",
-    "nodemon": "^2.0.12"
+    "handlebars": "^4.7.7"
   }
 }
