@@ -1,135 +1,148 @@
 {
-    "name": "KSR Design",
-    "short_name": "KSR Design",
-    "gallery": [
-      {
-        "src": "assets/img/gallery/1870Veteran/20-546016_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/1870Veteran/20-546016_2_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg",
-        "type": "image/jpg"
-      },
-      {
-        "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg",
-        "type": "image/jpg"
-      },
-      {
-        "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg",
-        "type": "image/jpg"
-      },
-      {
-        "src": "assets/img/gallery/2291Chelan/genMid.19-485988_5_0.jpg",
-        "type": "image/jpg"
-      },
-      {
-        "src": "assets/img/gallery/2291Chelan/genMid.19-485988_8_0.jpg",
-        "type": "image/jpg"
-      },
-      {
-        "src": "assets/img/gallery/3374Troy/21-726578_5_2.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/3374Troy/21-726578_6_2.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/3374Troy/21-726578_10_2.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/3374Troy/21-726578_16_2.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/3374Troy/21-726578_29_2.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4521Colbath/21-713678_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4521Colbath/21-713678_1_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4521Colbath/21-713678_2_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4521Colbath/21-713678_5_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4848Eldred/20-667290_6_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4848Eldred/20-667290_8_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4848Eldred/20-667290_9_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4848Eldred/20-667290_11_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/4848Eldred/20-667290_13_0.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2001593535xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2180210667xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2508457245xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2606054460xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2955387456xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m3173426418xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m4101572091xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m4139278364xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/6930Oporto/balichestlivingroom.jpeg",
-        "type": "image/jpeg"
-      },
-      {
-        "src": "assets/img/gallery/6930Oporto/dca1829bca01f17b56ec12671ce6ee28l-m1771093754xd-w1020_h770_q80.jpeg",
-        "type": "image/jpeg"
-      }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "start_url": "/",
-    "display": "standalone"
-  }
-  
+  "name": "KSR Design",
+  "short_name": "KSR Design",
+  "gallery": [
+    {
+      "src": "assets/img/gallery/1870Veteran/20-546016_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/1870Veteran/20-546016_2_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_6_0.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_7_0.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/gallery/2291Chelan/genBcs.19-485988_10_0.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/gallery/2291Chelan/genMid.19-485988_5_0.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/gallery/2291Chelan/genMid.19-485988_8_0.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/gallery/3374Troy/21-726578_5_2.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/3374Troy/21-726578_6_2.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/3374Troy/21-726578_10_2.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/3374Troy/21-726578_16_2.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/3374Troy/21-726578_29_2.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4521Colbath/21-713678_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4521Colbath/21-713678_1_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4521Colbath/21-713678_2_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4521Colbath/21-713678_5_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4848Eldred/20-667290_6_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4848Eldred/20-667290_8_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4848Eldred/20-667290_9_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4848Eldred/20-667290_11_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/4848Eldred/20-667290_13_0.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2001593535xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2180210667xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2508457245xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2606054460xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m2955387456xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m3173426418xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m4101572091xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/5637SpreadingOak/d75523f2eec32757814621837cb42694l-m4139278364xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/6930Oporto/balichestlivingroom.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/gallery/6930Oporto/dca1829bca01f17b56ec12671ce6ee28l-m1771093754xd-w1020_h770_q80.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone"
+}
