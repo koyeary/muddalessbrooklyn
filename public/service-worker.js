@@ -3,6 +3,7 @@ const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [ //hero images still need to be added
   "/",
   "/index.html",
+  "/favicon_io/favicon.ico",
   "/favicon_io/favicon-32x32.png",
   "favicon_io/favicon-16x16.png",
   "favicon_io/apple-touch-icon.png",
