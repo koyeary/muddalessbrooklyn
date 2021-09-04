@@ -21,13 +21,10 @@ app.use(routes);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+/* 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
-  //
-  app.get('*', (req, res) => {
-    res.send(path.join((__dirname = 'client/build/index.html')));
-  });
-}
+  app.use(express.static(path.join(__dirname, 'client/build'))); */
+
 //build mode
 app.get('*', (req, res) => {
   res.send(path.join(__dirname + '/client/public/index.html'));
