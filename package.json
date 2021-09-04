@@ -8,8 +8,8 @@
     "seed": "node seeders/seed.js"
   },
   "engines": {
-    "node": "v12.18.1",
-    "npm": "v7.21.0"
+    "node": "12.18.1",
+    "npm": "7.21.0"
   },
   "repository": {
     "type": "git",
