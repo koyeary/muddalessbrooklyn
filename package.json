@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "boilerplate portfolio site",
   "scripts": {
-    "start": "node server.js",
+    "start": "set NODE_ENV=production&& node server.js",
     "seed": "node seeders/seed.js"
   },
   "engines": {
