@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeders/seed.js",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip builds on Heroku"
   },
   "engines": {
     "node": "v12.18.1",
