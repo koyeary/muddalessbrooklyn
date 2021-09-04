@@ -4,9 +4,9 @@
   "description": "boilerplate portfolio site",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "seed": "node seeders/seed.js",
-    "heroku": "nodemon server.js"
+    "heroku": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,9 @@
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
+    "handlebars": "^4.7.7",
     "mongoose": "^6.0.4",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.6.3",
-    "nodemon": "^2.0.12"
-  },
-  "devDependencies": {
-    "handlebars": "^4.7.7"
+    "nodemailer": "^6.6.3"
   }
 }
