@@ -1,12 +1,9 @@
 const router     = require('express').Router();
 const nodemailer = require('nodemailer');
-const config = require('config');
+const config     = require('config');
 
 const user = process.env.MAIL_USER || config.get('MAIL_USER');
 const pass = process.env.MAIL_PASS || config.get('MAIL_PASS');
-
-//const user = config.MAIL_USER;
-//const pass = config.MAIL_PASS;
 
 // POST route from contact form
 router.post('/', (req, res, next) => {
