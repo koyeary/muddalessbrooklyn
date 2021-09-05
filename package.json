@@ -4,6 +4,7 @@
   "description": "boilerplate portfolio site",
   "scripts": {
     "start": "node server.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
     "seed": "node seeders/seed.js"
   },
   "engines": {
@@ -30,5 +31,8 @@
     "mongoose": "^6.0.4",
     "morgan": "^1.10.0",
     "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
