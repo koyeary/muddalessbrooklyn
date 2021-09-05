@@ -8,7 +8,6 @@ const routes    = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-
 // Connect Database
 connectDB();
 
@@ -32,6 +31,8 @@ app.set('view engine', 'handlebars');
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static('public'));
 
 
 //Listener
