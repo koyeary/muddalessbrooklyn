@@ -1,4 +1,5 @@
 const express   = require('express');
+const favicon   = require('serve-favicon')
 const connectDB = require('./config/db');
 const path      = require('path');
 const logger    = require('morgan');
@@ -29,7 +30,8 @@ const exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.get('/favicon.ico', (req, res) => res.status(200));
+app.use(favicon(__dirname + '/public/favicon.ico'));
+
 
 
 //Listener
