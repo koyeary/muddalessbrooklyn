@@ -4,7 +4,6 @@
   "description": "boilerplate portfolio site",
   "scripts": {
     "start": "node server.js",
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
     "seed": "node seeders/seed.js"
   },
   "engines": {
