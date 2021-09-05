@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express   = require('express');
 const favicon   = require('serve-favicon')
 const connectDB = require('./config/db');
@@ -5,7 +7,6 @@ const path      = require('path');
 const logger    = require('morgan');
 const routes    = require('./routes');
 
-require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
