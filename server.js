@@ -29,7 +29,7 @@ const exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/favicon.ico'));
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static('public'));
