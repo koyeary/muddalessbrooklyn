@@ -1,8 +1,8 @@
-const express = require('express');
+const express   = require('express');
 const connectDB = require('./config/db');
-const path = require('path');
-const logger = require('morgan');
-const routes = require('./routes');
+const path      = require('path');
+const logger    = require('morgan');
+const routes    = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +10,15 @@ const PORT = process.env.PORT || 3000;
 
 // Connect Database
 connectDB();
+
+//Middleware
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false, limit: '20mb' }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+//Routes
+app.use(routes);
 
 
 // View engine setup
@@ -20,14 +29,7 @@ const exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-//Middleware
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false, limit: '20mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
 
-//Routes
-app.use(routes);
 
 //Listener
 app.listen(PORT, () => {
