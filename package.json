@@ -4,7 +4,8 @@
   "description": "boilerplate portfolio site",
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "dev":  "nodemon server.js"
   },
   "engines": {
     "node": "12.18.1",
