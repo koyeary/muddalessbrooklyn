@@ -6,8 +6,12 @@ const routes = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+require('dotenv').config();
+
 // Connect Database
 connectDB();
+
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));
