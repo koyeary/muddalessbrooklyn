@@ -1,4 +1,4 @@
-const auth = require('./auth');
+/* const auth = require('./auth');
 
 const GoogleOauthStrategy = require('passport-google-oauth20').Strategy;
 
@@ -15,4 +15,4 @@ module.exports = (passport) => {
           userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo'
         },
         (token, refreshToken, profile, done) => done(null, {profile, token})));
-}
+} */

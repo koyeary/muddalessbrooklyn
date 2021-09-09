@@ -9,16 +9,19 @@ router.get('/', async (req, res) => {
 
     const hbsObject = {
       imageDocuments: images.map((doc) => {
-        return {
-          image: doc.image,
-          description: doc.description,
-          _id: doc._id
-        };
+          return {
+            _id: doc._id,
+            description: doc.description,
+            image: doc.image,
+            hero: doc.hero
+          };
       })
     };
 
     console.log(hbsObject);
+
     return res.render('gallery', hbsObject);
+
   } catch (err) {
     return console.error(err);
   }

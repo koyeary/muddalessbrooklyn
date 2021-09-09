@@ -9,10 +9,9 @@ var ImageSchema = new Schema({
     type: String, 
     required: true 
   },
-  rating: Number,
-  date: { 
-    type: Date, 
-    default: Date.now 
+  hero: {
+    type: Boolean,
+    default: false
   }
 });
 
