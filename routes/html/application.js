@@ -7,21 +7,22 @@ const router  = express.Router();
 
 router.get('/', async (req, res) => {
     try {
-      const images = await Image.find({ hero: true });
+      const images = await Image.find({ hero: true } );
   
       const hbsObject = {
-        imageDocuments: images.map((doc) => {
+        imageDocument: images.map((doc) => {
           return {
             _id: doc._id,
-            description: doc.description,
+            location: doc.location,
             image: doc.image,
             hero: doc.hero
           };
-        })
+        }),
+        style: './assets/css/style.css'
       };
-  
+
+
       console.log(hbsObject);
-  
       return res.render('index', hbsObject);
     } catch (err) {
       return console.error(err);

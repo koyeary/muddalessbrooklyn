@@ -27,15 +27,15 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
     return console.error(err);
   }
-});
+}); */
 
 router.post('/', async (req, res) => {
-    const { image, description, rating } = req.body;
+    const { image, location, hero } = req.body;
     try {
         const img = new Image({
             image,
-            description,
-            rating
+            location,
+            hero
         });
 
         await img.save();
@@ -44,6 +44,6 @@ router.post('/', async (req, res) => {
         console.error(err.message);
         res.status(500).send('Server error');
     }
-}) */
+});
 
 module.exports = router;

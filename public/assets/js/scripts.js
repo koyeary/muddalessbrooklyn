@@ -21,8 +21,7 @@ $(window).on('scroll', () => {
 
 //Nodemailer request
 const postReq = (name, email, phone, subject, message) => {
-
-   $.ajax('/api/mail', {
+  $.ajax('/api/mail', {
     method: 'POST',
     data: {
       name: name,
@@ -35,9 +34,8 @@ const postReq = (name, email, phone, subject, message) => {
       //$('#contactAlert').modal(console.log(res));
       alert(res.data);
     }
-  }); 
+  });
 };
-
 
 $('#mailSubmit').on('click', (e) => {
   e.preventDefault();
@@ -51,7 +49,6 @@ $('#mailSubmit').on('click', (e) => {
   postReq(name, email, phone, subject, message);
   alert('message sent');
   location.reload();
-  
 });
 
 // Send the POST request.
@@ -71,6 +68,27 @@ $('#mailSubmit').on('click', (e) => {
 }); */
 
 //
+
+// initialize isotope
+$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100
+  }
+});
+
+// define brick pattern
+/* const gridArray = $('.grid-item').toArray();
+console.log(gridArray);
+
+for (let i = 0; i < gridArray.length; i++) {
+  
+  if ( i % 4) {
+    $('.grid-item').addClass('grid-item--width2');
+  }
+  
+} */
 
 // Modal Image Gallery
 
