@@ -29,7 +29,7 @@ router.put('/:id', async (req, res) => {
   }
 }); */
 
-router.post('/', async (req, res) => {
+/* router.post('/', async (req, res) => {
     const { image, location, hero } = req.body;
     try {
         const img = new Image({
@@ -44,6 +44,6 @@ router.post('/', async (req, res) => {
         console.error(err.message);
         res.status(500).send('Server error');
     }
-});
+}); */
 
 module.exports = router;

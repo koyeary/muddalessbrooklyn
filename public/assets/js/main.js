@@ -88,7 +88,6 @@ $(window).on('load', function() {
 		e.preventDefault();
 	});
 
-	$('#613cf9f7895c2963933a4470').addClass('second-item');
 
 if($().circleProgress){
 

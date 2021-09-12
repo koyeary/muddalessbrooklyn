@@ -33,12 +33,13 @@
         <div class="row portfolios-area">
             <div class="col-lg-6">
                 <div class="portfolio-intro">
-                    <h2 class="section-title mb-5">Quick closings.<span> Above asking. </span>It's all in the staging.
+                    <h2 class="section-title mb-5">The <span>only</span> small business in <span>LA's top 3</span>
+                        stagers &amp; designers
                     </h2>
                     <ul class="portfolio-filter controls">
                         <li class="control" data-filter="all">All</li>
-                        <li class="control" data-filter=".eagle-rock">Eagle Rock</li>
                         <li class="control" data-filter=".hp">Highland Park</li>
+                        <li class="control" data-filter=".eagle-rock">Eagle Rock</li>
                         <li class="control" data-filter=".hollywood">Hollywood</li>
                         <li class="control" data-filter=".mulholland">Mulholland</li>
                         <li class="control" data-filter=".mt-washington">Mt Washington</li>
@@ -49,28 +50,8 @@
 
                 </div>
             </div>
-            <div class="first-item mix col-md-6 col-lg-12 hp p-lg-0">
-                <a href="./assets/img/HighlandPark/blues.webp" class="portfolio-item set-bg"
-                    data-setbg="./assets/img/HighlandPark/blues.webp">
-                    <div class="pi-inner">
-                        <h2>+</h2>
-                    </div>
-                </a>
-                <div class="portfolio-meta">
-                </div>
-            </div>
-{{!--              <div class="second-item mix col-md-6 col-lg-3 hp">
-                <a href="./assets/img/Hero/ColbathKitchenPerspective.jpg" class="portfolio-item set-bg "
-                    data-setbg="./assets/img/Hero/couchHERO.jpg">
-                    <div class="pi-inner">
-                        <h2>+</h2>
-                    </div>
-                </a>
-                <div class="portfolio-meta">
-                </div>
-            </div>  --}}
             {{#each galleryDocument}}
-            <div class="mix col-md-6 col-lg-3 {{location}}" id={{_id}}>
+            <div class="mix col-md-6 col-lg-3  {{location}}" id={{_id}}>
                 <a href={{galleryImage}} class="portfolio-item pi-style2 set-bg" data-setbg={{galleryImage}}>
                     <div class="pi-inner">
                         <h2>+</h2>

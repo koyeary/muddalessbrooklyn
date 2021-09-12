@@ -2,20 +2,12 @@
 const height = $(window).height();
 
 $(window).on('scroll', () => {
-  if (window.scrollY > height - 50) {
-    $('.navbar').addClass('fixed-top shadow');
-    $('.navbar').removeClass('mt-n4');
-    $('.links').addClass('my-3');
-    $('span').removeClass('d-none py-2');
-    $('a').removeClass('main-nav btn pb-2 pt-2 px-4');
-    $('ul').addClass('secondary-nav');
+  if (window.scrollY > height -200) {
+    $('.floating-btn').addClass('visible');
+    $('.floating-btn').removeClass('invisible');
   } else {
-    $('.navbar').removeClass('fixed-top shadow');
-    $('.navbar').addClass('mt-n4');
-    $('.links').removeClass('my-3');
-    $('span').addClass('d-none');
-    $('a').addClass('main-nav btn pb-2 pt-2 px-4');
-    $('ul').removeClass('secondary-nav');
+    $('.floating-btn').removeClass('visible');
+    $('.floating-btn').addClass('invisible');
   }
 });
 
@@ -69,37 +61,4 @@ $('#mailSubmit').on('click', (e) => {
 
 //
 
-// initialize isotope
-$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  masonry: {
-    columnWidth: 100
-  }
-});
 
-// define brick pattern
-/* const gridArray = $('.grid-item').toArray();
-console.log(gridArray);
-
-for (let i = 0; i < gridArray.length; i++) {
-  
-  if ( i % 4) {
-    $('.grid-item').addClass('grid-item--width2');
-  }
-  
-} */
-
-// Modal Image Gallery
-
-$('.lightbox').on('click', (e) => {
-  e.preventDefault();
-
-  const thisId = e.currentTarget.id;
-  $(`#my${thisId}`).modal('show');
-});
-
-$('.btn-close').on('click', () => {
-  const myId = $(this).attr('id');
-  $(`#my${myId}`).modal('hide');
-});
