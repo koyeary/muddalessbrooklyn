@@ -755,3 +755,14 @@ ol {
     font-size: 30px;
   }
 }
+
+.gallery-footer {
+  font-size: 15px;
+  color: #2D3048;
+}
+
+.gallery-footer a {
+  color: #2D3048;  
+}
+
+

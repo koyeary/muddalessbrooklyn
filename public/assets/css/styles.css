@@ -230,11 +230,11 @@ background-color: red;
 
 .footer {
   background-color: #2D3048;
-  font-size: small;
+  font-size: 14px;
   color: #ffff;
 }
 
 .footer a {
-  color: #ffff
+  color: #ffff;
 }
 
