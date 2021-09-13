@@ -1,7 +1,10 @@
 <div class="row" class="links" id="myLinks">
   <nav class="navbar navbar-expand-lg mt-n4 mb-4 mx-auto text-center">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <span class="navbar-brand ml-2 mb-0 h1 d-none">KSR Design</span>
+{{!--      <button class="navbar-toggler main-nav btn" type="button" data-toggle="collapse" data-target="#menuItems"
+      aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span> 
+    </button> --}}
+     <div class="collapse navbar-collapse" id="menuItems"> 
       <ul class="navbar-nav">
         <li class="nav-item px-5">
           <a class="main-nav btn pb-2 pt-2 px-4" href="#about">about</a>
@@ -10,12 +13,13 @@
           <a class="main-nav btn pb-2 pt-2 px-4" href="#contact">contact</a>
         </li>
         <li class="nav-item px-5">
-          <a class="main-nav btn pb-2 pt-2 px-4" href="/gallery">gallery</a>
+          <a class="main-nav btn pb-2 pt-2 px-4" href="/gallery" target="_blank">gallery</a>
         </li>
         {{!-- <li class="nav-item px-5">
           <a class="main-nav btn pb-2 pt-2 px-4" href="#testimonials">testimonials</a>
         </li> --}}
       </ul>
-    </div>
+             <div class="float-end">{{> floatingBtn}}</div>
+     </div> 
   </nav>
 </div>

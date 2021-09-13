@@ -1,4 +1,4 @@
-/* const { Image } = require('../../models');
+const { Image } = require('../../models');
 var db = require('../../models');
 
 module.exports = async (app) => {
@@ -27,4 +27,4 @@ module.exports = async (app) => {
         return console.error(err);
       }
     });
-}; */
+};

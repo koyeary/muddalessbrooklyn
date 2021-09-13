@@ -1,27 +1,29 @@
 const express = require('express');
 const router = express.Router();
-const Image = require('../../models/Image');
 
 router.get('/', async (req, res) => {
-  try {
+   try {
     
     const images = await Image.find({});
 
-    const hbsObject = {
-      imageDocuments: images.map((doc) => {
-        return {
-          image: doc.image,
-          description: doc.description,
-          _id: doc._id
-        };
+     const hbsObject =  {
+      layout: 'gallery',
+      galleryDocument: images.map((doc) => {
+          return {
+            _id: doc._id,
+            location: doc.location,
+            galleryImage: doc.image,
+            hero: doc.hero
+          };
       })
-    };
+    }
 
     console.log(hbsObject);
-    return res.render('gallery', hbsObject);
+    return res.render('gallery', hbsObject ); 
+ 
   } catch (err) {
     return console.error(err);
-  }
+  } 
 });
 
 

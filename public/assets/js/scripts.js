@@ -2,27 +2,18 @@
 const height = $(window).height();
 
 $(window).on('scroll', () => {
-  if (window.scrollY > height - 50) {
-    $('.navbar').addClass('fixed-top shadow');
-    $('.navbar').removeClass('mt-n4');
-    $('.links').addClass('my-3');
-    $('span').removeClass('d-none py-2');
-    $('a').removeClass('main-nav btn pb-2 pt-2 px-4');
-    $('ul').addClass('secondary-nav');
+  if (window.scrollY > height -200) {
+    $('.floating-btn').addClass('visible');
+    $('.floating-btn').removeClass('invisible');
   } else {
-    $('.navbar').removeClass('fixed-top shadow');
-    $('.navbar').addClass('mt-n4');
-    $('.links').removeClass('my-3');
-    $('span').addClass('d-none');
-    $('a').addClass('main-nav btn pb-2 pt-2 px-4');
-    $('ul').removeClass('secondary-nav');
+    $('.floating-btn').removeClass('visible');
+    $('.floating-btn').addClass('invisible');
   }
 });
 
 //Nodemailer request
 const postReq = (name, email, phone, subject, message) => {
-
-   $.ajax('/api/mail', {
+  $.ajax('/api/mail', {
     method: 'POST',
     data: {
       name: name,
@@ -35,9 +26,8 @@ const postReq = (name, email, phone, subject, message) => {
       //$('#contactAlert').modal(console.log(res));
       alert(res.data);
     }
-  }); 
+  });
 };
-
 
 $('#mailSubmit').on('click', (e) => {
   e.preventDefault();
@@ -51,7 +41,6 @@ $('#mailSubmit').on('click', (e) => {
   postReq(name, email, phone, subject, message);
   alert('message sent');
   location.reload();
-  
 });
 
 // Send the POST request.
@@ -72,16 +61,4 @@ $('#mailSubmit').on('click', (e) => {
 
 //
 
-// Modal Image Gallery
 
-$('.lightbox').on('click', (e) => {
-  e.preventDefault();
-
-  const thisId = e.currentTarget.id;
-  $(`#my${thisId}`).modal('show');
-});
-
-$('.btn-close').on('click', () => {
-  const myId = $(this).attr('id');
-  $(`#my${myId}`).modal('hide');
-});

@@ -1,8 +1,34 @@
-/* const express = require('express');
+const express = require('express');
 const router  = express.Router();
 
-router.get('/', (req, res) => {
+/* router.get('/', async (req, res) => {
     return res.render('index');
-});
+}); */
 
-module.exports = router; */
+router.get('/', async (req, res) => {
+    try {
+      const images = await Image.find({ hero: true } );
+  
+      const hbsObject = {
+        imageDocument: images.map((doc) => {
+          return {
+            _id: doc._id,
+            location: doc.location,
+            image: doc.image,
+            hero: doc.hero
+          };
+        }),
+        style: './assets/css/style.css'
+      };
+
+
+      console.log(hbsObject);
+      return res.render('index', hbsObject);
+    } catch (err) {
+      return console.error(err);
+    }
+  });
+
+module.exports = router;
+
+

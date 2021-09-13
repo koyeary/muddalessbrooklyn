@@ -5,16 +5,30 @@ var ImageSchema = new Schema({
   image: { 
     type: String,
     required: true },
-  description: { 
+  location: { 
     type: String, 
     required: true 
   },
-  rating: Number,
-  date: { 
-    type: Date, 
-    default: Date.now 
-  }
+  hero: {
+    type: Boolean,
+    default: false
+  },
+  created_at: Date,
+  updated_at: Date
 });
 
-module.exports = Image = mongoose.model("Image", ImageSchema);
+/**
+* Add the dates on save ( updated_at & created_at )
+*/
+ImageSchema.pre('save', next => {
+  let currentDate = new Date();
+
+  this.updated_at = currentDate;
+
+  if(!this.created_at) this.created_at = currentDate;
+
+  next();
+});
+
+module.exports = Image = mongoose.model('image', ImageSchema);
 

@@ -1,7 +1,7 @@
 const router    = require('express').Router();
 const Image     = require('../../models/Image');
 
- router.get('/', async (req, res) => {
+  router.get('/', async (req, res) => {
   try {
     const images = await Image.find({});
 
@@ -11,6 +11,7 @@ const Image     = require('../../models/Image');
   }
 });
 
+/*
 router.put('/:id', async (req, res) => {
   const { id, rating } = req.body;
 
@@ -26,15 +27,15 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
     return console.error(err);
   }
-});
+}); */
 
-router.post('/', async (req, res) => {
-    const { image, description, rating } = req.body;
+/* router.post('/', async (req, res) => {
+    const { image, location, hero } = req.body;
     try {
         const img = new Image({
             image,
-            description,
-            rating
+            location,
+            hero
         });
 
         await img.save();
@@ -43,6 +44,6 @@ router.post('/', async (req, res) => {
         console.error(err.message);
         res.status(500).send('Server error');
     }
-})
+}); */
 
 module.exports = router;
