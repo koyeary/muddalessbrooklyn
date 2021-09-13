@@ -10,16 +10,14 @@
 'use strict';
 
 
-$(window).on('load', function() { 
-	/*------------------
-		Preloder
-	--------------------*/
+$(window).on('load', () => { 
+
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(400).fadeOut("slow");
+	$("#preloader").delay(400).fadeOut("slow");
 
 	if($('.portfolios-area').length > 0 ) {
-		var containerEl = document.querySelector('.portfolios-area');
-		var mixer = mixitup(containerEl);
+		const containerEl = document.querySelector('.portfolios-area');
+		const mixer = mixitup(containerEl);
 	}
 
 });
@@ -30,9 +28,9 @@ $(window).on('load', function() {
 	/*------------------
 		Navigation
 	--------------------*/
-	$('.nav-switch').on('click', function(event) {
+	$('.nav-switch').on('click', (e) => {
 		$('.main-menu').slideToggle(400);
-		event.preventDefault();
+		e.preventDefault();
 	});
 
 
@@ -41,7 +39,7 @@ $(window).on('load', function() {
 		Background set
 	--------------------*/
 	$('.set-bg').each(function() {
-		var bg = $(this).data('setbg');
+		const bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
@@ -50,7 +48,7 @@ $(window).on('load', function() {
 	/*----------------------
 		Portfolio layout
 	------------------------*/
-	var port_fi =  $('.portfolios-area .first-item'),
+	const port_fi =  $('.portfolios-area .first-item'),
 		port_si =  $('.portfolios-area .second-item'),
 		port_intro_h =  $('.portfolio-intro').innerHeight();
 
@@ -60,7 +58,7 @@ $(window).on('load', function() {
 	}
 
 	$('.portfolio-item.pi-style2').each(function() {
-		var pi_width = $(this).width();
+		const pi_width = $(this).width();
 		$(this).height(pi_width + 50);
 	});
 
@@ -79,9 +77,9 @@ $(window).on('load', function() {
 	/*------------------
 		Accordions
 	--------------------*/
-	$('.panel-link').on('click', function (e) {
+	$('.panel-link').on('click', (e) => {
 		$('.panel-link').parent('.panel-header').removeClass('active');
-		var $this = $(this).parent('.panel-header');
+		const $this = $(this).parent('.panel-header');
 		if (!$this.hasClass('active')) {
 			$this.addClass('active');
 		}
