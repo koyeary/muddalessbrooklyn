@@ -18,9 +18,8 @@ router.get('/', async (req, res) => {
             hero: doc.hero
           };
         }),
-        style: './assets/css/style.css'
+        
       };
-
 
       console.log(hbsObject);
       return res.render('index', hbsObject);

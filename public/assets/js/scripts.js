@@ -2,7 +2,7 @@
 const height = $(window).height();
 
 $(window).on('scroll', () => {
-  if (window.scrollY > height -200) {
+  if (window.scrollY > height - 200) {
     $('.floating-btn').addClass('visible');
     $('.floating-btn').removeClass('invisible');
   } else {
@@ -12,19 +12,22 @@ $(window).on('scroll', () => {
 });
 
 //Nodemailer request
-const postReq = (name, email, phone, subject, message) => {
+
+const postReq = (sender, email, phone, subject, message) => {
+
   $.ajax('/api/mail', {
     method: 'POST',
-    data: {
-      name: name,
+    data:{
+      sender: sender,
       email: email,
       phone: phone,
       subject: subject,
       message: message
     },
     success: (res) => {
+      console.log(res.data);
       //$('#contactAlert').modal(console.log(res));
-      alert(res.data);
+      //alert(`Contact successful: ${res.data}`);
     }
   });
 };
@@ -32,16 +35,29 @@ const postReq = (name, email, phone, subject, message) => {
 $('#mailSubmit').on('click', (e) => {
   e.preventDefault();
 
-  const name = $('#name-input').val().trim();
-  const email = $('#email-input').val().trim();
-  const phone = $('#phone-input').val().trim();
-  const subject = $('#subject-input').val().trim();
-  const message = $('#message-input').val().trim();
+  const sender = $('.sender').val().trim();
+  const email = $('.email').val().trim();
+  const phone = $('.phone').val().trim();
+  const subject = $('.subject').val().trim();
+  const message = $('.message').val().trim();
 
-  postReq(name, email, phone, subject, message);
+  //console.log(JSON.stringify({sender, email, phone, subject, message}));
+  postReq(sender, email, phone, subject, message);
   alert('message sent');
-  location.reload();
+  //location.reload();
 });
+
+/*   //Image popup
+  const confirmSubmit = () => {
+    $('#mailSubmit').magnificPopup({
+      removalDelay: 400,
+      type: inline,
+      items: {
+        src: `<h4>Thank you.</h4>Your message has been sent. We'll be in touch.`,
+        closeBtnInside: true
+      }
+    });
+  } */
 
 // Send the POST request.
 //$('#mail').on('submit', (e) => {
@@ -60,5 +76,3 @@ $('#mailSubmit').on('click', (e) => {
 }); */
 
 //
-
-

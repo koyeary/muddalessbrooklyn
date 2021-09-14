@@ -13,13 +13,13 @@ const PORT = process.env.PORT || 3000;
 // Connect Database
 connectDB();
 
-//Routes
-app.use(routes);
-
 //Middleware
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false, limit: '20mb' }));
+
+//Routes
+app.use(routes);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
