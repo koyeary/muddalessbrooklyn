@@ -1,9 +1,4 @@
-/* =================================
-------------------------------------
-  Riddle - Portfolio
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
+
 
 /*----------------------------------------*/
 /* Template default CSS
@@ -13,19 +8,18 @@ html,
 body {
   height: 100%;
   color: #334252;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1,
-
+h2,
 h3,
 h4,
 h5,
 h6 {
   color: #252626;
   margin: 0;
-  font-weight: 800;
-  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif; 
 }
 
 p {
@@ -97,7 +91,7 @@ ol {
 }
 
 /*=== Preloder ===*/
-#preloder {
+#preloader {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -404,14 +398,13 @@ ol {
 }
 
 .portfolio-filter {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
   list-style: none;
   padding-bottom: 100px;
 }
 
 .portfolio-filter li {
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
   display: inline-block;
   margin-right: 20px;
   padding-bottom: 10px;
@@ -421,7 +414,6 @@ ol {
 
 .portfolio-filter li.mixitup-control-active {
   color: #334252;
-  font-weight: 800;
 }
 
 .portfolios-area .gallery-block {
@@ -538,9 +530,9 @@ ol {
   margin-right: 0;
 }
 
-/*------------------------
+/* /*------------------------
     About Page
---------------------------*/
+--------------------------
 .pic-frame {
   position: relative;
   padding-left: 25px;
@@ -574,7 +566,7 @@ ol {
 
 /*------------------------
     Blog Page
---------------------------*/
+--------------------------
 .blog-item {
   margin-bottom: 70px;
 }
@@ -619,7 +611,7 @@ ol {
 
 /*------------------------
     Contact Page
---------------------------*/
+--------------------------
 .contect-tect {
   text-align: center;
   margin-bottom: 70px;
@@ -672,7 +664,7 @@ ol {
 }
 
 .contact-form ::placeholder {
-  font-style: italic;
+  font-style: italic; 
 }
 
 /* ===========================
@@ -746,7 +738,7 @@ ol {
   }
 
   .section-title {
-    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
     font-size: 45px;
   }
   .portfolio-filter {
