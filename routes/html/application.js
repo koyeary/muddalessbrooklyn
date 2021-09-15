@@ -1,9 +1,6 @@
 const express = require('express');
 const router  = express.Router();
 
-/* router.get('/', async (req, res) => {
-    return res.render('index');
-}); */
 
 router.get('/', async (req, res) => {
     try {
@@ -17,8 +14,7 @@ router.get('/', async (req, res) => {
             image: doc.image,
             hero: doc.hero
           };
-        }),
-        
+        }),        
       };
 
       console.log(hbsObject);
