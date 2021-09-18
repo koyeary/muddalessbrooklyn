@@ -27,26 +27,25 @@ h1 {
 }
 
 h2 {
-  font-size : clamp(2rem, 3rem, 3.3vw);
+  font-size: clamp(2rem, 3rem, 3.3vw);
 }
 
 h3 {
-  font-size : clamp(1.25rem, 2rem, 2.2vw);
+  font-size: clamp(1.25rem, 2rem, 2.2vw);
 }
 
 h4 {
-  font-size: clamp(.75rem, 1.15rem, 1.15rem);
+  font-size: clamp(0.75rem, 1.15rem, 1.15rem);
 }
 
 .header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
-  letter-spacing: .08rem;
+  letter-spacing: 0.08rem;
   color: black;
   white-space: nowrap;
 }
-
 
 /* Hero / Img Carousel */
 .carousel-item img {
@@ -55,6 +54,14 @@ h4 {
   max-height: 60vh;
 }
 
+.mobile-carousel-item {
+  /*display: block; */
+  max-width: 375px;
+  height: 100%;
+  background-position: center center;
+  position: relative;
+  margin-bottom: 30px;
+}
 /* Navbar */
 
 .navbar {
@@ -87,7 +94,7 @@ h4 {
   color: #758691;
 }
 
-/* About */ 
+/* About */
 
 .about {
   background-color: #ede9e6;
@@ -95,7 +102,7 @@ h4 {
 
 .about-text {
   font-family: 'Roboto', sans-serif;
-  font-size: clamp(.75rem, 1.15rem, 1.15rem);
+  font-size: clamp(0.75rem, 1.15rem, 1.15rem);
 }
 
 .about-text ul {
@@ -103,13 +110,13 @@ h4 {
 }
 
 .portrait {
-   width: clamp(425px, 530px, 40vw);  
+  width: clamp(425px, 530px, 40vw);
 }
 
 /* Contact */
 
 .contact {
-  background-color: #E5E7E9;
+  background-color: #e5e7e9;
 }
 
 .contact-dialog {
@@ -122,7 +129,7 @@ h4 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
   color: #ffff;
 }
 
@@ -131,11 +138,10 @@ h4 {
   color: #ffff;
 }
 
-
 /* Footer */
 
 .footer {
-  background-color: #2D3048;
+  background-color: #2d3048;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -145,4 +151,3 @@ h4 {
 .footer a {
   color: #ffff;
 }
-

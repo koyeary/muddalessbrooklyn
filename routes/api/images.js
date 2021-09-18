@@ -11,4 +11,16 @@ const Image     = require('../../models/Image');
   }
 });
 
+router.put('/', async (req, res) => {
+  try {
+    const { _id, rating, notes } = req.body;
+
+    const rateMe = await Image.updateOne({ _id }, {$set: {rating: rating, notes: notes}});
+
+    return res.json(rateMe);
+  } catch (err) {
+    console.error(err);
+  }
+});
+
 module.exports = router;

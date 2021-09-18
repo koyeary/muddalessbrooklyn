@@ -92,3 +92,28 @@ $(window).on('load', () => {
     });
   }
 })(jQuery);
+
+const postReq = (rating, notes, _id) => {
+  $.ajax('/api/images', {
+    method: 'PUT',
+    data: {
+      rating: rating,
+      notes: notes,
+      _id: _id
+    },
+    success: (res) => {
+      alert(`Image ${_id} updated`);
+    }
+  });
+};
+
+$('button').on('click', (e) => {
+  //e.preventDefault();
+
+  const rating  = $('.rating').val().trim();
+  const notes   = $('.notes').val().trim();
+  const _id     = e.target.value;
+
+  console.log(`click ${_id}`);
+  postReq(rating, notes, _id);
+});

@@ -13,7 +13,8 @@ router.get('/', async (req, res) => {
             _id: doc._id,
             location: doc.location,
             galleryImage: doc.image,
-            hero: doc.hero
+            hero: doc.hero,
+            rating: doc.rating
           };
       })
     }

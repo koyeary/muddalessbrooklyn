@@ -18,9 +18,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false, limit: '20mb' }));
 
-//Routes
-app.use(routes);
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
@@ -38,6 +35,9 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Routes
+app.use(routes);
 
 //Listener
 app.listen(PORT, () => {
