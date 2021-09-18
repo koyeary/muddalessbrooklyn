@@ -10,6 +10,7 @@
 </header>
 <!-- header section end -->
 
+{{> table}}
 
 <!-- portfolio section start -->
 <section class="portfolio-section pt70">
@@ -47,12 +48,12 @@
                         <h2>+</h2>
                     </div>
                 </a>
-                <div class="portfolio-meta">
+                {{!-- <div class="portfolio-meta">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">rating</span>
                         </div>
-                        <textarea class="form-control rating" aria-label="rating" placeholder={{ rating }}></textarea>
+                        <textarea class="form-control rating" aria-label="rating" >{{rating}}</textarea>
                     </div>
                 </div>
                 <div class="portfolio-meta">
@@ -60,10 +61,10 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">notes</span>
                         </div>
-                        <textarea class="form-control notes" aria-label="rating" placeholder={{ notes }}></textarea>
+                        <textarea class="form-control notes" aria-label="notes">{{ notes }}</textarea>
                     </div>
                 </div>
-                <button id="ratingSubmit" class="mb-5" value={{ _id }}>submit</button>
+                <button id="ratingSubmit" class="mb-5" value={{ _id }}>submit</button> --}}
             </div>
             {{/each}}
         </div>

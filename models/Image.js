@@ -16,6 +16,9 @@ var ImageSchema = new Schema({
   rating: {
     type: Number
   },
+  notes: {
+    type: String
+  },
   created_at: Date,
   updated_at: Date
 });

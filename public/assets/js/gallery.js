@@ -94,7 +94,7 @@ $(window).on('load', () => {
 })(jQuery);
 
 const postReq = (rating, notes, _id) => {
-  $.ajax('/api/images', {
+  $.ajax('/api/images/:id', {
     method: 'PUT',
     data: {
       rating: rating,
@@ -103,17 +103,17 @@ const postReq = (rating, notes, _id) => {
     },
     success: (res) => {
       alert(`Image ${_id} updated`);
+      //location.reload();
     }
   });
 };
 
 $('button').on('click', (e) => {
-  //e.preventDefault();
+  e.preventDefault();
 
-  const rating  = $('.rating').val().trim();
-  const notes   = $('.notes').val().trim();
   const _id     = e.target.value;
+  const rating  = $(`#rating-${_id}`).val().trim();
+  const notes   = $(`#notes-${_id}`).val().trim();
 
-  console.log(`click ${_id}`);
   postReq(rating, notes, _id);
 });
