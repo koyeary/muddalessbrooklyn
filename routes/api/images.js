@@ -11,6 +11,25 @@ const Image     = require('../../models/Image');
   }
 });
 
+router.post('/', async (req, res) => {
+  try {
+    const { location, image, rating, hero } = req.body;
+
+    const img = new Image ({
+      location,
+      image,
+      rating,
+      hero
+    });
+
+    await img.save();
+
+    return console.log(img);
+  } catch (err) {
+    return console.error(err);
+  }
+});
+
 router.put('/:id', async (req, res) => {
   try {
     const { _id, rating, notes } = req.body;

@@ -62,7 +62,7 @@ h4 {
   position: relative;
   margin-bottom: 30px;
 }
-/* Navbar */
+/* Navbars */
 
 .navbar {
   background-color: #fff;
@@ -80,6 +80,26 @@ h4 {
 .main-nav:hover {
   background-color: #334252;
   color: white;
+}
+
+.mobile-nav img {
+  height: 75px;
+  width: auto;
+}
+
+.mobile-nav .btn {
+  background-color: #334252;
+  outline: none;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  width: 6rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 .gallery-nav a {

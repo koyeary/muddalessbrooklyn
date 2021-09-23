@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router  = express.Router();
 
 router.get('/', async (req, res) => {
   try {
@@ -8,22 +8,22 @@ router.get('/', async (req, res) => {
       return a.rating - b.rating;
     });
 
+    const filtImgs = sortedImages.filter(image => image.rating > 0 );
+
     const hbsObject = {
       layout: 'gallery',
 
-      galleryDocument: sortedImages.map((doc) => {
+      galleryDocument: filtImgs.map((img) => {
         return {
-          _id: doc._id,
-          location: doc.location,
-          galleryImage: doc.image,
-          hero: doc.hero,
-          rating: doc.rating,
-          notes: doc.notes
+          _id: img._id,
+          location: img.location,
+          galleryImage: img.image,
+          hero: img.hero,
+          rating: img.rating
         };
       })
     };
 
-    console.log(hbsObject);
     return res.render('gallery', hbsObject);
   } catch (err) {
     return console.error(err);

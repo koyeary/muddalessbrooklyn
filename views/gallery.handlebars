@@ -41,31 +41,14 @@
                 </div>
             </div>
             {{#each galleryDocument}}
-            <div class="mix col-md-6 col-lg-3 {{location}}" id={{_id}}>
-                <a href={{galleryImage}} class="portfolio-item pi-style2 set-bg" data-setbg={{galleryImage}}>
+            <div class="mix col-md-6 col-lg-3 {{ location }}" id={{ _id }}>
+                <a href={{ galleryImage }} class="portfolio-item pi-style2 set-bg" data-setbg={{ galleryImage }}>
                     <div class="pi-inner">
                         <h2>+</h2>
                     </div>
                 </a>
-                {{!-- <div class="portfolio-meta">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">rating</span>
-                        </div>
-                        <textarea class="form-control rating" aria-label="rating" >{{rating}}</textarea>
-                    </div>
-                </div>
-                <div class="portfolio-meta">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">notes</span>
-                        </div>
-                        <textarea class="form-control notes" aria-label="notes">{{ notes }}</textarea>
-                    </div>
-                </div>
-                <button id="ratingSubmit" class="mb-5" value={{ _id }}>submit</button> --}}
             </div>
-            {{/each}}
+            {{/each }}
         </div>
     </div>
 </section>
