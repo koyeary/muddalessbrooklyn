@@ -7,17 +7,17 @@ router.get('/', async (req, res) => {
       const images = await Image.find({ hero: true } );
   
       const hbsObject = {
-        imageDocument: images.map((doc) => {
+        imageDocument: images.map((img) => {
           return {
-            _id: doc._id,
-            location: doc.location,
-            image: doc.image,
-            hero: doc.hero
+            _id: img._id,
+            location: img.location,
+            image: img.image,
+            hero: img.hero,
+            rating: img.rating
           };
         }),        
       };
 
-      console.log(hbsObject);
       return res.render('index', hbsObject);
     } catch (err) {
       return console.error(err);

@@ -13,6 +13,12 @@ var ImageSchema = new Schema({
     type: Boolean,
     default: false
   },
+  rating: {
+    type: Number
+  },
+  notes: {
+    type: String
+  },
   created_at: Date,
   updated_at: Date
 });
