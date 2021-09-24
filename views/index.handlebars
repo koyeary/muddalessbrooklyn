@@ -1,16 +1,16 @@
 <body>
-
     <div class="my-3 mx-auto header">
         {{> header }}
         {{> mobileNav }}
     </div>
-    <section>
+    <section class="d-none d-md-block">
         {{> carousel }}
     </section>
+    <section class="d-md-none d-xs-block">
+        {{> mobileCarousel }}
+    </section>
     <section>
-        <container class="m-4 pt-3">
-            {{> links }}
-        </container>
+        {{> nav }}
     </section>
 
     <main>

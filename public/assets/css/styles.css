@@ -54,14 +54,11 @@ h4 {
   max-height: 60vh;
 }
 
-.mobile-carousel-item {
-  /*display: block; */
-  max-width: 375px;
-  height: 100%;
-  background-position: center center;
-  position: relative;
-  margin-bottom: 30px;
+.mobile-carousel {
+  max-width: 100vw;
+  height: auto;
 }
+
 /* Navbars */
 
 .navbar {
@@ -171,3 +168,4 @@ h4 {
 .footer a {
   color: #ffff;
 }
+
