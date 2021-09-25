@@ -53,12 +53,12 @@ h4 {
  /* Img Carousel  */
 .main-carousel {
   max-width: auto !important;
-  height: 60vh;
+  height: 60vh !important;
 }
 
 .mobile-carousel {
   max-width: auto !important;
-  height: 30vh;
+  height: 30vh !important;
 }
 
 /* Navbars */
