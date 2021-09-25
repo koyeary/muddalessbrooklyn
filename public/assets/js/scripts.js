@@ -1,4 +1,3 @@
-
 //Nodemailer request
 const postReq = (sender, email, phone, subject, message) => {
   $.ajax('/api/mail', {
@@ -12,6 +11,7 @@ const postReq = (sender, email, phone, subject, message) => {
     },
     success: (res) => {
       alert(`Thanks, ${sender}. Your message has been sent`);
+      console.log(res);
       location.reload();
     }
   });
