@@ -1,40 +1,40 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const express = require('express');
-const favicon = require('serve-favicon');
-const connectDB = require('./config/db');
-const path = require('path');
-const logger = require('morgan');
-const routes = require('./routes');
+const express = require("express");
+const favicon = require("serve-favicon");
+const connectDB = require("./config/db");
+const path = require("path");
+const logger = require("morgan");
+const routes = require("./routes");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Connect Database
 connectDB();
 
 //Middleware
-app.use(logger('dev'));
+app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false, limit: '20mb' }));
+app.use(express.urlencoded({ extended: false, limit: "20mb" }));
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set("views", path.join(__dirname, "views"));
 
 //set up handlebars
-const exphbs = require('express-handlebars');
+const exphbs = require("express-handlebars");
 app.engine(
-  'handlebars',
+  "handlebars",
   exphbs({
-    defaultLayout: 'main'
+    defaultLayout: "main",
   })
 );
-app.set('view engine', 'handlebars');
+app.set("view engine", "handlebars");
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + "/public/favicon.ico"));
 
 // Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
 //Routes
 app.use(routes);
