@@ -5,7 +5,7 @@ const favicon = require("serve-favicon");
 const connectDB = require("./config/db");
 const path = require("path");
 const routes = require("./routes");
-
+const logger = require("morgan");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -34,7 +34,7 @@ app.use(favicon(__dirname + "/public/favicon.ico"));
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/.netlify/functions/server", express.Router);
+
 //Routes
 app.use(routes);
 
