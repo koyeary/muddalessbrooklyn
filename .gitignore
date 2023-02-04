@@ -77,6 +77,8 @@ typings/
 .env.test
 config/default.json
 
+/package-lock.json
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
