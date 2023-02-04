@@ -39,6 +39,6 @@ app.use("/.netlify/functions/server", express.Router);
 app.use(routes);
 
 //Listener
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
