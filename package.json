@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node server.js",
     "seed": "node seeders/seed.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "ng build",
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "v16.15.0",
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/koyeary/muddalessbrooklyn/issues"
   },
-  "homepage": "https://github.com/koyeary/muddalessbrooklyn#readme",
+  "homepage": "https://github.com/koyeary/muddalessbrooklyn",
   "dependencies": {
     "body-parser": "^1.20.1",
     "dotenv": "^10.0.0",
