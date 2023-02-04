@@ -7,7 +7,6 @@ const path = require("path");
 const routes = require("./routes");
 
 const app = express();
-const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3000;
 
 // Connect Database
@@ -15,7 +14,6 @@ connectDB();
 
 //Middleware
 app.use(logger("dev"));
-app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false, limit: "20mb" }));
 
@@ -44,6 +42,3 @@ app.use(routes);
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
-
-module.exports = app;
-module.exports.handler = serverless(app);
