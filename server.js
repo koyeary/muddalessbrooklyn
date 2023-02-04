@@ -4,13 +4,11 @@ const express = require("express");
 const favicon = require("serve-favicon");
 const connectDB = require("./config/db");
 const path = require("path");
-const serverless = require("serverless-http");
-const logger = require("morgan");
 const routes = require("./routes");
 
 const app = express();
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Connect Database
 connectDB();

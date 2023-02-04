@@ -5,9 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "seed": "node seeders/seed.js",
-    "dev": "nodemon server.js",
-    "build": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "dev": "nodemon server.js"
   },
   "engines": {
     "node": "v16.15.0",
