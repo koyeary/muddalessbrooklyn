@@ -21,13 +21,9 @@ app.use(express.urlencoded({ extended: false, limit: "20mb" }));
 app.set("views", path.join(__dirname, "views"));
 
 //set up handlebars
-const exphbs = require("express-handlebars");
-app.engine(
-  "handlebars",
-  exphbs({
-    defaultLayout: "main",
-  })
-);
+const { create } = require("express-handlebars");
+const hbs = create({ defaultLayout: "main" });
+app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(favicon(__dirname + "/public/favicon.ico"));
