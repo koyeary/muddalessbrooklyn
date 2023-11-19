@@ -1,0 +1,15 @@
+[build]
+    publish = "site"
+    functions = "functions"
+
+[dev]
+    autoLaunch=false
+
+[functions]
+    [functions.main]
+        included_files = ["layouts/index.handlebars"]
+
+[[redirects]]
+    from = "/"
+    to = "/.netlify/functions/main"
+    status = 200
