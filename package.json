@@ -8,8 +8,8 @@
     "dev": "nodemon server.js"
   },
   "engines": {
-    "node": "v16.15.0",
-    "npm": "8.5.5"
+    "node": "v18.18.2",
+    "npm": "9.8.1"
   },
   "repository": {
     "type": "git",
