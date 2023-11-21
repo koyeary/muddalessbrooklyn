@@ -1,15 +1,33 @@
 {
   "name": "ksrdesign.net",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "repository": "https://github.com/koyeary/ksrdesign",
   "author": "Katherine Yeary-Rantala <katyeary@gmail.com>",
   "license": "UNLICENSE",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeders/seed.js",
+    "dev": "nodemon server.js"
+  },
   "devDependencies": {
     "netlify-cli": "^9.16.6"
   },
+  "engines": {
+    "node": "v18.18.2",
+    "npm": "9.8.1"
+  },
   "dependencies": {
-    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
     "handlebars": "^4.7.7",
-    "mongoose": "^7.4.5"
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "serve-favicon": "^2.5.0",
+    "serverless-http": "^3.1.1"
   }
 }
