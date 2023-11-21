@@ -1,38 +1,15 @@
 {
-  "name": "muddalessbrooklyn",
+  "name": "ksrdesign.net",
   "version": "1.0.0",
-  "description": "boilerplate portfolio site",
-  "scripts": {
-    "start": "node server.js",
-    "seed": "node seeders/seed.js",
-    "dev": "nodemon server.js"
+  "repository": "https://github.com/koyeary/ksrdesign",
+  "author": "Katherine Yeary-Rantala <katyeary@gmail.com>",
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "netlify-cli": "^9.16.6"
   },
-  "engines": {
-    "node": "v18.18.2",
-    "npm": "9.8.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koyeary/muddalessbrooklyn.git"
-  },
-  "author": "Kat Yeary",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/koyeary/muddalessbrooklyn/issues"
-  },
-  "homepage": "https://github.com/koyeary/muddalessbrooklyn",
   "dependencies": {
-    "body-parser": "^1.20.1",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-handlebars": "^6.0.7",
+    "dotenv": "^16.3.1",
     "handlebars": "^4.7.7",
-    "mongoose": "^6.9.0",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.3",
-    "nodemailer": "^6.9.1",
-    "nodemon": "^2.0.20",
-    "serve-favicon": "^2.5.0",
-    "serverless-http": "^3.1.1"
+    "mongoose": "^7.4.5"
   }
 }

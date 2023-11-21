@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-mongoose.set("strictQuery", false);
 var ImageSchema = new Schema({
   image: {
     type: String,

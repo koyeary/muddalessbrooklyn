@@ -1,9 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #252626;
@@ -14,12 +10,13 @@ body,
 html {
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #334252;
 }
 
@@ -40,7 +37,7 @@ h4 {
 }
 
 .header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   letter-spacing: 0.08rem;
@@ -48,9 +45,9 @@ h4 {
   white-space: nowrap;
 }
 
- /* Hero */ 
- 
- /* Img Carousel  */
+/* Hero */
+
+/* Img Carousel  */
 .main-carousel {
   max-width: auto !important;
   height: 60vh !important;
@@ -65,12 +62,13 @@ h4 {
 
 .navbar {
   background-color: #fff;
+  padding: 2rem 0;
 }
 
 .main-nav {
   border: none;
   background-color: none;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   color: #334252;
@@ -101,13 +99,12 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
-
 .gallery-nav a {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   color: #334252;
@@ -125,7 +122,7 @@ h4 {
 }
 
 .about-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: clamp(0.75rem, 1.15rem, 1.15rem);
 }
 
@@ -150,7 +147,7 @@ h4 {
 
 .send {
   background-color: #334252;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
   letter-spacing: 0.07rem;
@@ -166,7 +163,7 @@ h4 {
 
 .footer {
   background-color: #2d3048;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #ffff;
@@ -175,4 +172,3 @@ h4 {
 .footer a {
   color: #ffff;
 }
-

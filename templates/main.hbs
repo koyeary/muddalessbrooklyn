@@ -1,4 +1,15 @@
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello {{name}}</h1>
+      <h2>Timestamp: {{timestamp}}</h2>
+    </div>
+  </body>
+</html>
+{{!-- <html lang="en">
 
   <head>
     <!-- Required meta tags -->
@@ -21,36 +32,41 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      type="image/x-icon"
-      href="/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="32x32"
-      href="/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="16x16"
-      href="/favicon_io/favicon-16x16.png"
-    />
-    <link rel manifest="manifest.webmanifest" />
+
+    <link manifest="manifest.webmanifest" />
 
     <title>KSR Design</title>
   </head>
+<body>
+    <div class="my-3 mx-auto header">
+        {{> header }}
+        {{> mobileNav }}
+    </div>
+    <section class="d-none d-md-block">
+        {{> carousel }}
+    </section>
+    <section class="d-md-none d-xs-block">
+        {{> mobileCarousel }}
+    </section>
+    <section>
+        {{> nav }}
+    </section>
 
-  <body>
-
-    {{{body}}}
-
-    <!-- Include Handlebars from a CDN -->
+    <main>
+        <div class="about" id="about">
+            {{> about }}
+        </div>
+        <div class="contact">
+            <div class="row mx-auto py-5" id="contact"></div>
+            <div class="row mx-auto py-5 justify-content-center">
+                {{> contact}}
+            </div>
+            <div class="row mx-auto py-5"></div>
+        </div>
+    </main>
+    <section>
+        {{> footer }}
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"
     ></script>
@@ -70,11 +86,6 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    {{!     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script> }}
     <script
       src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"
     ></script>
@@ -82,3 +93,5 @@
   </body>
 
 </html>
+
+ --}}

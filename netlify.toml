@@ -7,9 +7,10 @@
 
 [functions]
     [functions.main]
-        included_files = ["layouts/index.handlebars"]
+        included_files = ["templates/main.hbs"]
+
 
 [[redirects]]
-    from = "/"
-    to = "/.netlify/functions/main"
+    from = "/gallery"
+    to = "/.netlify/site/gallery.html"
     status = 200

@@ -1,3 +1,31 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@900&Fira+Sans:wght@400&display=swap" rel="stylesheet">
+<!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href='./assets/css/gallery.css' />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    {{!--
+    <link rel manifest="manifest.webmanifest" /> --}}
+
+
+    <title>KSR Design</title>
+</head>
+
+<body class="body-pad">
+    <!-- Page Preloder -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 <!-- header section start -->
 <header class="header-section">
     <div class="container-fluid">
@@ -19,6 +47,9 @@
         <div class="row portfolios-area">
             <div class="col-lg-6">
                 <div class="portfolio-intro">
+                    {{!-- <h2 class="section-title mb-5">The <span>only</span> small business in <span>LA's top 3</span>
+                        stagers &amp; designers
+                    </h2> --}}
                     <h1 class="section-title my-5">Close faster,<br><span>above asking.</span></h1>
                     <ul class="portfolio-filter controls">
                         <li class="control" data-filter="all">All</li>
@@ -41,6 +72,7 @@
                 <a href={{ galleryImage }} class="portfolio-item pi-style2 set-bg" data-setbg={{ galleryImage }}>
                     <div class="pi-inner">
                         <h2>+</h2>
+                        <h3>{{ _id }}</h3>
                     </div>
                 </a>
             </div>
@@ -52,3 +84,13 @@
 <section>
     {{> galleryFooter }}
 </section>
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+</body>
+
+</html>
